@@ -1,18 +1,20 @@
+//importo la class
 import Planeta from "./clases/planeta.js";
 
-var arregloValores;
+//declaro las variables a usar
+let arregloValores;
 let arregloDistancia;
 let arregloNombrePlanetas = [];
 let arregloPlanetas = [];
 let arregloTamanio = [];
 
-var enviarEvaluacion = (e) => {
-
+var enviarEvaluacion = () => {
+//tomo los inputs del HTML y los guardo en array con spread operator
     let inputs = [...document.querySelectorAll(".numeracion_planetas")];
     let inputsD = [...document.querySelectorAll(".distancia_planetas")];
     let inputsN = [...document.querySelectorAll(".nombre_planetas")];
     let inputsT = [...document.querySelectorAll(".Tamanio_planetas")];
-
+//recorro arreglos con un callback .map
     arregloValores = inputs.map((input) => {
         return parseInt(input.value);
     });
@@ -47,7 +49,7 @@ var enviarEvaluacion = (e) => {
     alert("Arreglo creado correctamente");
 }
 
-let ordernarValores = (e) => {
+let ordernarValores = () => {
     /**
      * Generamos copia del arreglo en ambos casos.
      */
@@ -80,7 +82,7 @@ let ordernarValores = (e) => {
 
 }
 
-let filtrarDistancia = (e) => {
+let filtrarDistancia = () => {
     let distanciaABuscar = prompt("Digite la distacia a filtrar");
 
     let arregloFiltradoDistancia = arregloDistancia.filter(
@@ -95,7 +97,7 @@ let filtrarDistancia = (e) => {
 
 }
 
-let buscarPlaneta = (e) => {
+let buscarPlaneta = () => {
     let nombrePlanetaABuscar = prompt("Digite el nombre del planeta a buscar");
     console.log(nombrePlanetaABuscar);
     let r = arregloNombrePlanetas.find((nombre) => nombrePlanetaABuscar.toLowerCase() == nombre.toLowerCase());

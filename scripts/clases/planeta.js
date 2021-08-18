@@ -1,4 +1,6 @@
-  
+ //asignar clase en javaScript creando arreglo a
+ //cual llegaran los atributos
+
 class planeta{
     constructor(nombre_planeta){
         this.numero_clasificacion = 0;
