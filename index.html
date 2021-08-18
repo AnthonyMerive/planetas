@@ -11,19 +11,16 @@
 
 <body>
 
-    <h1>Ejercicio Planeta</h1>
-
-    <table>
-
+    <h1>Ejercicio sobre los planetas</h1>
+    <table style="width: 80%;">
         <thead>
             <tr>
-                <th># Planeta</th>
-                <th>Nombre del planeta</th>
+                <th># de planeta</th>
+                <th>Planeta</th>
+                <th>Distancia (año luz)</th>
                 <th>Tamaño</th>
-                <th>Distancia</th>
             </tr>
         </thead>
-
         <tbody>
             <tr>
                 <td><input type="number" id="n_planeta_1" class="numeracion_planetas planeta1"></td>
@@ -56,10 +53,18 @@
                 <td><input type="number" id="t_planeta_5" class="Tamanio_planetas planeta5"></td>
             </tr>
         </tbody>
-
     </table>
 
-    <script src="./scripts/script.js"></script>
+    <id class="container">
+
+        <button id="btn_enviar_evaluacion" class="item">Enviar</button>
+        <button id="btn_ordenar_valores" class="item">Ordernar Valores</button>
+        <button id="btn_filtar_distancia" class="item">Filtrar</button>
+        <button id="btn_buscar_planeta" class="item">Buscar</button>
+
+
+        </div>
+        <script src="./scripts/script.js" type="module"></script>
 </body>
 
 </html>
