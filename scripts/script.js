@@ -42,8 +42,7 @@ var enviarEvaluacion = () => {
         planeta.tamanio = document.getElementById(`t_planeta_${x}`).value;
 
         arregloPlanetas.push(planeta);
-        console.log(x)
-    }
+        }
 
     console.log(arregloPlanetas);
     alert("Arreglo creado correctamente");
